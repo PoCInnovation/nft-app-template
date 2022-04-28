@@ -2,18 +2,15 @@
 
 ## Setup Starton 
 
-Go to the register page of the [Starton Website](https://app.starton.io/register) and create an account.
-
-Get your Starton api key in the Developer Section on the Dashboard and Copy it in the variable `STARTON_API_KEY` in the `.env` file at the root of the api project.
-
-Got to the Wallet section, create a Starton Wallet and claim faucet on Matic Polygon (Ex Matic) mumbai network with your own wallet address.
+- Go to the register page of the [Starton Website](https://app.starton.io/register) and create an account.
+- Get your Starton api key in the Developer Section on the Dashboard and copy it in the variable `STARTON_API_KEY` in the `.env` file at the root of the api project.
+- Go to the Wallet section, create a Starton Wallet and claim faucets on the Matic Polygon (Ex Matic) mumbai network with your own wallet address.
 
 ## Setup Docker
 
-You need to install Docker and Docker-Compose on your system to lunch the database. Here is a documentation for it : [Install Docker Engine](https://docs.docker.com/engine/install/), [Install Docker Compose
-](https://docs.docker.com/compose/install/).
+You need to install Docker and Docker-Compose on your system to launch the database. Here is documentation for it : [Install Docker Engine](https://docs.docker.com/engine/install/), [Install Docker Compose](https://docs.docker.com/compose/install/).
 
-Be carfull, after installing docker you will also need to follow this steps: [Manage Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user), [Configure Docker to start on boot](https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot)
+Be careful, after installing docker you will also need to follow this steps: [Manage Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user), [Configure Docker to start on boot](https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot)
 
 ## Install Node and Npm
 
@@ -24,27 +21,27 @@ To manage your node version you can you use nvm (node version manager), here is 
 
 ## Start the project
 
-First of all, you need to lunch the db.
+First of all, you need to launch the database (db).
 
-To do that it's very simple, you just need to use the command:
+To do that, you just need to use the command:
 
     npm run db:up
 
-If the database is started correctly, you will be able to access to the [mongoDb interface](http://localhost:8081/)
+If the database is started correctly, you will be able to access the [mongoDb interface](http://localhost:8081/)
 
 If you want to stop the db you just need to use the command:
 
     npm run db:down
 
-After that, use this command to install all the nodes dependences of the project. These dependences concern all the external packages that your project need:
+After that, use this command to install all the nodes dependencies of the project. These dependencies are all the external packages that your project need:
 
     npm install
 
-Now, you can lunch the backend with nodemon (for hot reload) with the command :
+Now, you can launch the backend with nodemon (for hot reload) with the command :
 
     npm run dev
 
-If the backend start and connect correctly to db you will see this on your terminal :
+If the backend starts and connects correctly to the db you will see this on your terminal :
 
     > backend-starton@1.0.0 dev
     > nodemon src/index.ts
@@ -59,9 +56,9 @@ If the backend start and connect correctly to db you will see this on your termi
 
 ## Setup Postman
 
-Postman is a very usefull tool for testing backend application.
+Postman is a very useful tool for testing backend application.
 This tool allow you to test your api's endpoints without a frontend.
 
 To download it, go to the [download page](https://www.postman.com/downloads/) on the Postman Website.
 
-Congratulation, you can now start the backend project ! 🎉
+Congratulations, you can now start the backend project ! 🎉
